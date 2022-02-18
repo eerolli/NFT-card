@@ -1,0 +1,114 @@
+:root {
+	--mainbg: hsl(217, 54%, 11%);
+	--cardbg: hsl(216, 50%, 16%);
+	--line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+	--softblue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: grid;
+	grid-template-areas:'. . . '
+						'. card .'
+						'. card .'
+						'. attribution.' ;
+	font-family: "Outfit", sans-serif;
+	place-items: center;
+	margin: 0;
+	background-color: var(--mainbg);
+}
+
+.card {
+	grid-area: card;
+	background-color: var(--cardbg);
+	max-width: 17rem;
+	place-items: center;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.card-image {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.legend {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.8rem;
+	padding-bottom: 5px;
+}
+
+.legend-left {
+	display: flex;
+	color: var(--cyan);
+	font-weight: 300;
+	place-items: center;
+}
+
+.legend-right {
+	display: flex;
+	color: var(--softblue);
+	font-weight: 300;
+	place-items: center;
+}
+
+.ethereum-icon, .clock-icon {
+	height: 0.8rem;
+	padding-right: 5px;
+
+}
+
+.line {
+	border: none;
+	height: 1px;
+	background-color: var(--line);
+}
+
+.card-heading {
+	color: var(--white);
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.card-text {
+	color: var(--softblue);
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.creator {
+	font-weight: 300;
+	font-size: 0.8rem;
+	color: var(--softblue);
+	display: flex;
+	align-content: center;
+}
+
+.avatar {
+	width: 8%;
+	border: 0.5px solid white;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.footer-text {
+	width: 100%;
+	padding-left: 1.5rem;
+}
+
+span {
+	color: var(--white);
+}
+
+.attribution {
+	grid-area: attribution;
+	max-width: 18rem;
+	color: var(--white);
+}
