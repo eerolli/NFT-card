@@ -112,3 +112,8 @@ span {
 	max-width: 18rem;
 	color: var(--white);
 }
+
+span:active, .card-heading:active {
+	color: var(--cyan);
+	cursor: pointer;
+}
